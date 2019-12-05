@@ -1,10 +1,10 @@
-import * as UserLoader from '../modules/user/UserLoader';
+import * as UserLoader from '../graphql/modules/user/UserLoader';
 
 export const createLoaders = () => ({
   UserLoader: UserLoader.getLoader(),
 });
 
-export const dataloadersMiddleware = (ctx, next) => {
+export const dataloadersMiddleware = async (ctx, next) => {
   ctx.dataloaders = createLoaders();
-  next();
+  await next();
 };
