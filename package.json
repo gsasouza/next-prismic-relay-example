@@ -16,7 +16,7 @@
     "@babel/preset-env": "^7.7.4",
     "apollo-link-context": "^1.0.19",
     "apollo-link-prismic": "^1.0.6",
-    "apollo-server-koa": "^2.9.12",
+    "apollo-server-koa": "^2.14.2",
     "babel-plugin-relay": "^7.1.0",
     "babel-preset-next": "^1.2.0",
     "cookies": "^0.8.0",
